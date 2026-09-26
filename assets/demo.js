@@ -1,0 +1,1 @@
+document.addEventListener('click',function(e){var b=e.target.closest('.slot,.group-btn,.modal-close');if(!b)return;var m=document.querySelector('.modal');if(b.classList.contains('modal-close')){m.classList.remove('open');return;}var c=document.getElementById('chosen');if(c)c.textContent=b.dataset.slot||'Gruppenanfrage · Wunschtermin nach Absprache';m.classList.add('open');});
